@@ -36,3 +36,12 @@ Some Considerations:
 Strategy allows to plugin a custom logic in the behavior. In traditinoal pattern, the caller / client determines which behavior they need the algorithm to act on. 
 
 With Lambdas though it is much simpler to pass behavior as is given in the example as well
+
+
+## Command 
+Command allows to segregate each behavior into their own object. 
+- So the "Reciever" supports all kind of behaviors.
+- Then you have command objects that invoke one operation on the reciever each
+   - The Command Class takes Reciever as input
+- The Invoker facilitates the command to go through (by taking command object as input)
+This allows you to segregate commands on a reciever and lets you add behavior in invoker as well (like Audit log etc)
