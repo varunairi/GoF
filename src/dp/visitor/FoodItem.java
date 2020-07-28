@@ -1,17 +1,14 @@
-package visitor;
+package dp.visitor;
 
-public class CleaningItem implements GroceryItem {
+public class FoodItem implements GroceryItem {
 	private float basePrice;
 	private float tax;
-	public CleaningItem(float basePrice) {
-		this.basePrice = basePrice;
+	public FoodItem(float price) {
+		this.basePrice = price;
 	}
-	@Override
 	public float getBasePrice() {
 		return this.basePrice;
 	}
-
-	@Override
 	public float getTotalPrice() {
 		
 		return this.basePrice + this.tax;
@@ -22,4 +19,6 @@ public class CleaningItem implements GroceryItem {
 		
 		return visitor.visit(this);
 	}
+	
+
 }

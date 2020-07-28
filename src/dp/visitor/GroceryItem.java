@@ -1,4 +1,4 @@
-package visitor;
+package dp.visitor;
 
 public interface GroceryItem {
 
