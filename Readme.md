@@ -45,3 +45,11 @@ Command allows to segregate each behavior into their own object.
    - The Command Class takes Reciever as input
 - The Invoker facilitates the command to go through (by taking command object as input)
 This allows you to segregate commands on a reciever and lets you add behavior in invoker as well (like Audit log etc)
+
+## Builder 
+Builder is used to construct an object that is made up of different parts/steps. There is a builder interface that can be extended and the concrete classes work on a "product" and enrich it with data per the logic expected from that class. 
+
+The orchestration of all the steps is done through a "Director" 
+
+The Test Driver class in the example chooses the builder, passes on to the director and then gets back the built product from that builder. 
+

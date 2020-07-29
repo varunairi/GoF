@@ -6,10 +6,7 @@ public class TaxCalcVisitor implements Visitor {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public float visit(GroceryItem m) {
-		throw new IllegalAccessError();
-	}
+	
 
 	@Override
 	public float visit(FoodItem fi) {
