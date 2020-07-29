@@ -53,3 +53,11 @@ The orchestration of all the steps is done through a "Director"
 
 The Test Driver class in the example chooses the builder, passes on to the director and then gets back the built product from that builder. 
 
+
+## COR 
+Chain of responsibility allows you to process a request by a chain of filters by one and only one of those filters. IF the filter is unable to process, it will pass it on to next one. In JAva 8, you can visualize a chain of Consumers and can pass them to make a chain . 
+## Bridge
+This is used when you have a requirement where a key attribute can change independently . For example, instead of creating a Vehicle --> Car, Bike --> AutoCar, Manual Car , Auto Bike, Manual Bike heirarchy. You can have a separate Transmission abstraction that can be part of Vehicle as an attribute. So if tomorrow, a "CVT" or "Dual" transmission comes in , there is no impact to Vehicl heirarchy.
+
+
+The Test Driver class in the example chooses the builder, passes on to the director and then gets back the built product from that builder. 
